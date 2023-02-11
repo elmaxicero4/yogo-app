@@ -86,7 +86,7 @@ export const BussinessPage = () => {
                             <button
                                 className="bg-primary rounded-md text-white font-medium font-inter py-[5px] sm:py-[10px]"
                             >
-                               <a target="_blank" href={`https://api.whatsapp.com/send?phone=${businessData.contacto}&text=Hola *${businessData.nombre}* te vi en https://yogoapp.co/#/sites/${businessData.nombre}`}>WhatsApp</a>
+                               <a target="_blank" href={`https://api.whatsapp.com/send?phone=${businessData.contacto}&text=Hola *${businessData.nombre}* te vi en https://yogoapp.co/sites/${businessData.nombre}`}>WhatsApp</a>
                             </button> : undefined
 
                         }

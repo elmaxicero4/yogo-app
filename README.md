@@ -1,2 +1,1 @@
-# yogo
-# yogo-app
+# Yogo App

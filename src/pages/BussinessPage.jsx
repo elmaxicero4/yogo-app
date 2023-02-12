@@ -65,6 +65,8 @@ export const BussinessPage = () => {
 
                         <div className="flex flex-col flex-1 gap-2 sm:px-[5rem]">
 
+                        {/*
+                        
                         {businessProductsList.length >= 1 ?
                             <button
                                 className="bg-purple rounded-md text-white font-medium font-inter py-[5px] sm:py-[10px]"
@@ -73,6 +75,8 @@ export const BussinessPage = () => {
                                 Comprar
                             </button> : undefined  
                         }
+                        
+                    */}
 
                         {businessData.contacto != undefined ?
                             <button
@@ -121,7 +125,7 @@ export const BussinessPage = () => {
                                             <div
                                                 key={url}
                                                 onClick={() => openImage(url)}
-                                                className="cursor-pointer rounded-md overflow-hidden"
+                                                className="cursor-pointer rounded-md overflow-hidden max-w-[200px]"
                                             >
                                                 <img src={url} alt="img" className="w-full rounded-md h-full hover:scale-110 transition-all" />
                                             </div>

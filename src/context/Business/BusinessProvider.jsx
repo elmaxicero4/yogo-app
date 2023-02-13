@@ -32,7 +32,7 @@ export const BusinessProvider = ({ children }) => {
 
     const getOneBusiness = async (market) => {
         try {
-            const { data: dataBusiness } = await clienteAxios(`/CITYS/Sincelejo/MARKETS.json?orderBy="user"&equalTo="${market}"`)
+            const { data: dataBusiness } = await clienteAxios(`/CITYS/Sincelejo/MARKETS.json?orderBy="nombre"&equalTo="${market}"`)
             const [businessInfo] = Object.values(dataBusiness)
             setBusinessData(businessInfo)
 
@@ -55,7 +55,7 @@ export const BusinessProvider = ({ children }) => {
     const getBusinessCategories = async (site) => {
         try {
             // get business categories
-            const { data: dataBusiness } = await clienteAxios.get(`/CITYS/Sincelejo/MARKETS.json?orderBy="nombre"&equalTo="${site}"`)
+            const { data: dataBusiness } = await clienteAxios.get(`/CITYS/Sincelejo/MARKETS.json?orderBy="user"&equalTo="${site}"`)
             const { data } = await clienteAxios.get(`/CITYS/Sincelejo/MARKETS/${Object.keys(dataBusiness)}/categories.json`)
             setBusinessCategories(Object.keys(data))
 

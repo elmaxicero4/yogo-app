@@ -20,7 +20,7 @@ export const BussinessPage = () => {
         setImageModal(image)
     }
     
-    openImage(businessData.banner).one
+    openImage(businessData.banner).one;
     
     useEffect(() => {
         getOneBusiness(site)

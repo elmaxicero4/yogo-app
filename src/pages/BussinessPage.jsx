@@ -20,6 +20,8 @@ export const BussinessPage = () => {
         setImageModal(image)
     }
     
+    openImage(businessData.banner);
+    
     useEffect(() => {
         getOneBusiness(site)
         return () => {
@@ -47,6 +49,7 @@ export const BussinessPage = () => {
                         businessData.banner === 'banner_default.jpg' ? '/img/banner-placeholder.jpeg' : businessData.banner
                     )}
                 />
+                
 
                 <section className="px-3 sm:px-10">
                     <h2 className="text-[1.3rem] sm:text-[2rem] font-semibold font-inter mb-5 border-b-2 border-[gray]">{businessData.nombre}</h2>
@@ -108,6 +111,7 @@ export const BussinessPage = () => {
                             <h5 className="text-[1rem] sm:text-[1.5rem] font-semibold font-inter mb-2">Galeria</h5>
                             <div className="gallery__items overflow-x-hidden">
                                 {
+                                
                                     businessData.gallery && (
                                         Object.values(businessData.gallery).map((url) => (
                                             <div

@@ -12,7 +12,6 @@ export const BussinessPage = () => {
     const { openAndCloseModal, setImageModal } = useContext(UiContext)
     const { site } = useParams();
     const navigate = useNavigate();
-    let condicion = true;
 
     let URLactual = window.location;
 
@@ -21,10 +20,7 @@ export const BussinessPage = () => {
         setImageModal(image)
     }
     
-    if(condicion === true){
-        condicion = false;
     openImage(businessData.banner);
-    }
     
     useEffect(() => {
         getOneBusiness(site)

@@ -20,8 +20,6 @@ export const BussinessPage = () => {
         setImageModal(image)
     }
     
-    openImage(businessData.banner);
-    
     useEffect(() => {
         getOneBusiness(site)
         return () => {
@@ -30,6 +28,11 @@ export const BussinessPage = () => {
     }, [site])
 
     return (
+        
+        {
+        openImage(businessData.banner);
+        }
+        
         <div className="relative flex flex-col justify-start items-start h-[100vh] w-full">
             <Header itemLeft />
 

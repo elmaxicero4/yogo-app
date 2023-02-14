@@ -22,16 +22,13 @@ export const BussinessPage = () => {
     
     useEffect(() => {
         getOneBusiness(site)
+        openImage(businessData.banner);
         return () => {
             setBusinessData({})
         }
     }, [site])
 
     return (
-        
-        {
-        openImage(businessData.banner);
-        }
         
         <div className="relative flex flex-col justify-start items-start h-[100vh] w-full">
             <Header itemLeft />

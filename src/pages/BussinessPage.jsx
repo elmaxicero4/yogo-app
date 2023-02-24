@@ -100,13 +100,15 @@ export const BussinessPage = () => {
                     </div>
 
                 </section>
-                {businessData.descripcion != undefined ?
+                
                     <section className="description mb-10 px-3 sm:px-10">
+                    {businessData.descripcion != undefined ?
                         <h5 className="text-[1rem] sm:text-[1.5rem] font-semibold font-inter mb-2">Descripcion</h5>
                         <p className="text-[.8rem] sm:text-[1.2rem] font-inter">{businessData.descripcion}</p>
+                        }
                     </section>
                 
-                }
+                
 
                 {
                     (businessData.gallery) && (

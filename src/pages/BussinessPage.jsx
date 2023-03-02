@@ -78,11 +78,11 @@ export const BussinessPage = () => {
                             </button> : undefined
                         }
 
-                        {businessData.contacto != undefined ?
+                        {businessData.whatsapp != undefined ?
                             <button
                                 className="bg-primary rounded-md text-white font-medium font-inter py-[5px] sm:py-[10px]"
                             >
-                               <a target="_blank" href={`https://api.whatsapp.com/send?phone=${businessData.contacto}&text=Hola 👋 ${businessData.nombre} te vi en Yogo App 🥳 https://yogoapp.co/sites/${businessData.user}`}>WhatsApp</a>
+                               <a target="_blank" href={`https://api.whatsapp.com/send?phone=${businessData.whatsapp}&text=Hola 👋 ${businessData.nombre} te vi en Yogo App 🥳 https://yogoapp.co/sites/${businessData.user}`}>WhatsApp</a>
                             </button> : undefined
 
                         }
